@@ -1,0 +1,15 @@
+{
+  "do_sample": true,
+  "early_stopping": true,
+  "bos_token_id": 50256,
+  "eos_token_id": 50257,
+  "pad_token_id": 50258,
+  "max_new_tokens": 30,
+  "min_new_tokens": 8,
+  "no_repeat_ngram_size": 2,
+  "repetition_penalty": 1.5,
+  "temperature": 0.85,
+  "top_k": 125,
+  "top_p": 0.92,
+  "transformers_version": "4.30.0"
+}

@@ -1,0 +1,7 @@
+
+.DS_Store
+.DS_Store
+*.DS_Store
+__pycache__/headline.cpython-311.pyc
+*.pyc
+config/.DS_Store
