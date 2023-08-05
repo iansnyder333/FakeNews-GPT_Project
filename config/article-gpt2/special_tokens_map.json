@@ -1,0 +1,13 @@
+{
+  "bos_token": "<|endoftext|>",
+  "eos_token": "<|EOS|>",
+  "pad_token": "<pad>",
+  "sep_token": "<|body|>",
+  "unk_token": {
+    "content": "<|endoftext|>",
+    "lstrip": false,
+    "normalized": true,
+    "rstrip": false,
+    "single_word": false
+  }
+}

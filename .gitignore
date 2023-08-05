@@ -5,3 +5,9 @@
 __pycache__/headline.cpython-311.pyc
 *.pyc
 config/.DS_Store
+*.csv
+*.1
+*.2
+*.0
+config/article-gpt2/training_args.bin
+*.bin
