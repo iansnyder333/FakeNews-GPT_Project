@@ -4,18 +4,21 @@ from torch.nn import functional as F
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, GenerationConfig
 from tqdm import tqdm
 
+# Base Config for Character level GPT model, Pre trained GPT2 model use config folder
 # --------------------------------------------#
 batch_size = 16  # how many independent sequences will we process in parallel?
 block_size = 64  # 16 what is the maximum context length for predictions?
-max_iters = 2000
-eval_interval = 1000
-learning_rate = 3e-4
-device = "cuda" if torch.cuda.is_available() else "cpu"
-eval_iters = 200
-n_embd = 320  # 192
-n_head = 6
-n_layer = 6
-dropout = 0.2
+max_iters = 2000  # how many training iterations?
+eval_interval = 1000  # every so often we check on the validation set
+learning_rate = 3e-4  # learning rate for the Adam optimizer
+device = (
+    "cuda" if torch.cuda.is_available() else "cpu"
+)  # what device to use for training
+eval_iters = 200  # how many iterations to use for estimating validation loss
+n_embd = 320  # embedding dimension
+n_head = 6  # number of attention heads
+n_layer = 6  # number of transformer blocks
+dropout = 0.2  # dropout rate
 # --------------------------------------------#
 
 
@@ -312,8 +315,8 @@ class FakeNewsGPT:
 
 if __name__ == "__main__":
     config = {
-        "Headline": "/Users/iansnyder/Desktop/Projects/Transformer/config/headline-gpt2",
-        "Article": "/Users/iansnyder/Desktop/Projects/Transformer/config/article-gpt2",
+        "Headline": "config/article-gpt2",
+        "Article": "config/article-gpt2",
     }
     model = FakeNewsGPT(config)
     model.generate(

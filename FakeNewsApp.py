@@ -3,11 +3,29 @@ import streamlit as st
 import time
 from modelGPT import FakeNewsGPT
 
-config = {
-    "Headline": "/Users/iansnyder/Desktop/Projects/Transformer/config/headline-gpt2",
-    "Article": "/Users/iansnyder/Desktop/Projects/Transformer/config/article-gpt2",
-}
-m = FakeNewsGPT(config)
+
+# Assume this function interacts with your model and returns the summarized text
+@st.cache_resource  # 👈 Add the caching decorator
+def load_model():
+    config = {
+        "Headline": "config/headline-gpt2",
+        "Article": "config/article-gpt2",
+    }
+    m = FakeNewsGPT(config)
+    return m
+
+
+# Load the model at the top
+m = load_model()
+
+
+def generate_text(input_text):
+    # Use the pre-loaded 'model' to generate the summary
+    # summarized_text = model.generate_summary(input_text)
+    # return summarized_text
+    return input_text
+
+
 st.markdown(
     "<style>body { color: green; background-color: #f0f0f0; }</style>",
     unsafe_allow_html=True,
