@@ -1,24 +1,24 @@
 import streamlit as st
+from modelFlanT5 import SummaryModel
 
 # from transformers import pipeline
 
 
-# Assume this function interacts with your model and returns the summarized text
-# @st.cache_resource  # 👈 Add the caching decorator
+@st.cache_resource  # 👈 Add the caching decorator
 def load_model():
-    return "model"
+    return SummaryModel()
     # return pipeline("sentiment-analysis")
 
 
 # Load the model at the top
-model = load_model()
+m = load_model()
 
 
 def summarize_text(input_text):
     # Use the pre-loaded 'model' to generate the summary
     # summarized_text = model.generate_summary(input_text)
     # return summarized_text
-    return input_text
+    return m.generate(input_text)
 
 
 # Title of the application

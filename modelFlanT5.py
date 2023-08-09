@@ -16,6 +16,7 @@ class SummaryModel:
         )
         self.tokenizer = AutoTokenizer.from_pretrained(config.base_model_name_or_path)
         self.model = PeftModel.from_pretrained(model, peft_model_id)
+        self.model.eval()
 
     def generate(self, input_text):
         inputs = self.tokenizer(input_text, return_tensors="pt")
