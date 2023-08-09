@@ -16,8 +16,6 @@ m = load_model()
 
 def summarize_text(input_text):
     # Use the pre-loaded 'model' to generate the summary
-    # summarized_text = model.generate_summary(input_text)
-    # return summarized_text
     return m.generate(input_text)
 
 
