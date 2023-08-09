@@ -260,7 +260,7 @@ def train_NewsGPT(text, checkpoint=None, save_path=None):
     )
 
 
-# Pre trained GPT2 model
+# Pre trained GPT2 model, for consumer build since char level GPT is too slow and currently not filtering out bad words well enough.
 class FakeNewsGPT:
     def __init__(self, config: dict):
         assert "Headline" in config, "Headline config missing"

@@ -1,5 +1,6 @@
 import os
 
+# Current config requires gpu, if you want to run on cpu, remove this line and add output files in load statements
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 import torch
