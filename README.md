@@ -8,6 +8,13 @@ Fine-tuning large scale pre-trained transformers leads to huge performance gains
 
 **The purpose of this project was for me to get hands on exposure using LLMS for NLP tasks in a practical setting**
 
+## Demo
+Generate News
+
+https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/fcbab6a8-97b2-45cf-8dd2-f7ddace74c9f
+
+
+
 ## Performance 
 <img width="746" alt="FT5-Eval" src="https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/5a6f4d30-9e71-4482-b32e-a46b2a2964ef">
 
