@@ -8,7 +8,32 @@ Fine-tuning large scale pre-trained transformers leads to huge performance gains
 
 **The purpose of this project was for me to get hands on exposure using LLMS for NLP tasks in a practical setting**
 
-## Demo
+## Table of Contents
+
+- [How to Run and Install](#how-to-run-and-install)
+- [Video Demonstration](#video-demonstration)
+- [Notes](#notes)
+
+## How to Run and Install
+
+Install (MacOS)
+```sh
+git clone https://github.com/iansnyder333/FakeNews-GPT_Project.git
+cd FakeNews-GPT_Project
+python3.11 -m venv venv
+source venv/bin/activate
+pip3.11 install -r requirements.txt
+```
+Run (MacOS)
+```sh
+#Generate News
+python3.11 streamlit run FakeNewsApp.py
+#Summary
+python3.11 streamlit run SummaryApp.py
+```
+
+## Video Demonstration
+
 Generate News
 
 https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/fcbab6a8-97b2-45cf-8dd2-f7ddace74c9f
@@ -21,9 +46,11 @@ https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/a88ea87f-4e
 
 
 
+## Notes 
 
-
-## Performance 
+Performance for the Flan-T5 Summary Model
 <img width="746" alt="FT5-Eval" src="https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/5a6f4d30-9e71-4482-b32e-a46b2a2964ef">
+
+Training scripts are all located in their respective config files. I will have visuals uploaded to readme in a future commit.
 
 
