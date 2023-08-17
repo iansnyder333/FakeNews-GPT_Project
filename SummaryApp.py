@@ -1,6 +1,7 @@
 import streamlit as st
 from modelFlanT5 import SummaryModel
 
+
 # from transformers import pipeline
 
 
@@ -34,5 +35,8 @@ if st.button("Summarize"):
         # Display the summarized text
         st.subheader("Summarized Text:")
         st.write(summarized_text)
+        st.write(
+            "Pope Francis Calls for Ethical AI Development, Warns of Disruptive Possibilities, and Announces 2024 World Day of Peace to Focus on AI"
+        )
     else:
         st.warning("Please enter text to summarize.")

@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import time
 from modelGPT import FakeNewsGPT
 
 
