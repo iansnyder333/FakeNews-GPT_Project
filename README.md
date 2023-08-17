@@ -13,6 +13,14 @@ Generate News
 
 https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/fcbab6a8-97b2-45cf-8dd2-f7ddace74c9f
 
+Summarize Text
+
+
+
+https://github.com/iansnyder333/FakeNews-GPT_Project/assets/58576523/a88ea87f-4ea5-419d-ada2-00811bf6778f
+
+
+
 
 
 ## Performance 
