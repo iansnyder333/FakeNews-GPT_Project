@@ -12,3 +12,4 @@ config/.DS_Store
 config/article-gpt2/training_args.bin
 *.bin
 *__pycache__
+*.hf
