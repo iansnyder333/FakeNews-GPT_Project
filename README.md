@@ -68,6 +68,6 @@ Performance for the Flan-T5 Summary Model
 ## Notes 
 
 **This project is still in development for production** 
-Training scripts are all located in their respective config files. I will have visuals uploaded to readme in a future commit.
+Training scripts are all located in their respective config files. I will have visuals uploaded to readme in a future commit. The model training was done using Google Collab and exported using HuggingFace to be stored locally on my 2016 macbook for sample inference.
 
 
